@@ -1,0 +1,26 @@
+<?php //脚本13-3 - header.html
+
+//包含functions脚本：
+include('includes/functions.php');
+?>
+
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="js/relocation.js"></script>
+	<link rel="stylesheet" media="all" href="css/style.css" />
+	<title><?php
+	if(defined('TITLE')) {	//标题常量有无定义。
+		print 'TITLE';
+	}else {	//标题常量未定义。 
+		print 'My Site of Quotes';
+	}
+	?></title>
+</head>
+<body>
+<div id="container">
+	<h1>My Site of Quotes</h1>
+	<br/>
+	<!-- 可变内容开始 -->
+
+		

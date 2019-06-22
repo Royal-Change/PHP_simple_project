@@ -1,0 +1,21 @@
+<!-- 可变内容结束 -->
+<?php	//脚本13-4 - footer.html
+
+//显示管理链接。。。。
+// - 如果用户是管理员且当前页面不为logout.php
+// - 或者$loggedin变量为TRUE （例如，用户刚刚登陆）
+if((is_administrator() && basename($_SERVER['PHP_SELF']) != 'logout.php') or (isset($loggedin) && $loggedin)) {
+	
+	//创建链接：
+	print '<hr /><h3>Site Admin</h3>
+	<p><a href="home.php?">Home page</a> <-> 
+	<a href="add_quote.php">Add Quote</a><->
+	<a href="view_quotes.php?sort=DESC">View All Quote</a><->
+	<a href="logout.php">Logout</a></p>';
+}
+?>
+
+</div><!-- 容器 -->
+<div id="footer">Content &copy; 2011</div>
+</body>
+</html>
